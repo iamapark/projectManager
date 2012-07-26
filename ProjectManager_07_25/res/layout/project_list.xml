@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/projectlist_ac"
+    android:orientation="vertical" >
+
+    <!-- Title Button -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/createProject_btn"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="프로젝트 생성"
+            android:textColor="#666666"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/joinProject_btn"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="프로젝트 참여"
+            android:textColor="#666666"
+            android:textSize="20dp" />
+        
+        
+    </LinearLayout>
+
+    <!-- List View -->
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:divider="@drawable/line"
+        android:cacheColorHint="#00000000" />  
+
+</LinearLayout>

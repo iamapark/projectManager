@@ -1,0 +1,58 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ideaname_ac"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/ideaSubject"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/title"
+        android:gravity="center_horizontal"
+        android:textColor="#666666"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+    <TextView
+        android:id="@+id/ideaContent"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="3dp"
+        android:textColor="#666666"
+        android:textSize="25sp" />
+
+    <ListView
+        android:id="@+id/replyList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/fillrow"
+        android:divider="@drawable/line"
+        android:cacheColorHint="#00000000" >
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/sendLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-50dp"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/replyContent"
+            android:layout_width="265dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:hint="댓글 달기" />
+
+        <Button
+            android:id="@+id/replySend"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:text="등록" />
+    </LinearLayout>
+
+</LinearLayout>

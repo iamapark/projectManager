@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/createidea_ac"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/iname_edit"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="90dp"
+        android:hint="아이디어 제목을 입력하세요" />
+
+    <EditText
+        android:id="@+id/contents_edit"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="45dp"
+        android:inputType="textMultiLine"
+        android:hint="아이디어 내용을 입력하세요" />
+    
+    <Button
+        android:id="@+id/ci_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="33dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/submit_change" />
+
+</LinearLayout>
